@@ -4,4 +4,4 @@ Ces deux scripts codés en Python permettent d'ordonner dans des CSV **les princ
 
 Ils utilisent les modules urllib, BeautifulSoup, re et csv. A noter que ces scripts ont été codés sous une distribution Debian, donc pas avec la dernière version de Python.
 
-Les recettes sont détaillées [sur ce blog](){:target="_blank"}
+Les recettes sont détaillées [sur ce blog](http://raphi.m0le.net/blog/sraper-wikipedia-python.html){:target="_blank"}
