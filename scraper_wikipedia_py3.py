@@ -28,9 +28,7 @@ try:
 			source = ligne.findAll("a", {"href":re.compile("^http://www.culture.gouv")}) 
 			if monuments and longitude and latitude and source:
 				monument = monuments[0].get("data-sort-value") # si les sélections existent, on balance
-				if monument: # là j'ai dû rajouter un test, ai pas bien compris pourquoi
-					monument = monument.encode('utf-8') # on est obligé d'encoder en UTF-8, sinon ça plante
-				adresse = monuments[1].get_text().encode('utf-8')
+				adresse = monuments[1].get_text()
 				longitude_valeur = longitude.get('value')
 				latitude_valeur = latitude.get('value')
 				lien = source[0].get('href')
