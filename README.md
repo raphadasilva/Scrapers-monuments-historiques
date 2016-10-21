@@ -1,4 +1,4 @@
-# Scrapers monuments historiques
+# Scrapers des monuments historiques sur Wikipedia
 
 Ces deux scripts codés en Python permettent d'ordonner dans des CSV **les principales informations de pages Wikipedia consacrées aux monuments historiques** (Strasbourg et principales villes du Grand-Est).
 
