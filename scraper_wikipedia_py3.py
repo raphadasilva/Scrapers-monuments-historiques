@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import urllib.request
+import requests
 import re
 from bs4 import BeautifulSoup
 import csv
@@ -16,9 +16,9 @@ try:
 	majcsv.writerow(('Monument','Adresse','Longitude','Latitude','Source'))
 	for ville in villes:
 		url_ville = depart+ville # une simple addition de chaînes de cara' nous donne nos URL complètes
-		url = urllib.request.urlopen(url_ville).read() # et on ouvre chacune d'entre elles
+		url = requests.get(url_ville) # et on ouvre chacune d'entre elles
 		print("Lien : "+url_ville)
-		soupe = BeautifulSoup(url)
+		soupe = BeautifulSoup(url.text)
 		tableau = soupe.find("table", {"class":"wikitable sortable"}) # on chope le premier tableau de classe "wikitable sortable"
 		lignes = tableau.findAll("tr") # puis toutes ses lignes
 		for ligne in lignes:
