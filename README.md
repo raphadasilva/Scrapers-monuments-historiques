@@ -6,7 +6,7 @@ L'objectif est grosso modo de se retrouver avec un fichier qui est traduisible p
 
 ![CSV_QGis](http://raphi.m0le.net/blog/images/monuments_ge.png)
 
-Ces scripts utilisent les modules urllib, BeautifulSoup, re et csv. A noter que ces scripts ont été codés sous une distribution Debian, donc pas avec la dernière version de Python.
+Ces scripts utilisent les modules urllib, BeautifulSoup, re et csv. A noter que leurs premières versions ont été codées sous une distribution Debian, donc pas avec la dernière version de Python.
 
 Les recettes sont détaillées [sur ce blog](http://raphi.m0le.net/blog/sraper-wikipedia-python.html) !
 
